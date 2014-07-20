@@ -4,11 +4,10 @@ module Shhhhh
 
     def call_app(request, env)
       # if the path looks like /assets/some/script.js, don't bother logging
-      # just move on
-      if env['PATH_INFO'] =~ /\A\/assets\/
+      if env['PATH_INFO'] =~ /\A\/assets\//
         @app.call(env)
       else
-        super(request, env)
+        super
       end
 
       ensure
