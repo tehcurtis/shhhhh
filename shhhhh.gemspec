@@ -11,8 +11,8 @@ Gem::Specification.new do |s|
   s.homepage    = 'http://rubygems.org/gems/shhhhh'
   s.license     = 'MIT'
 
-  s.add_dependency 'railties', '>= 3.2.19'
-  s.add_development_dependency 'rake'
-  s.add_development_dependency 'tzinfo'
-  s.add_development_dependency 'rspec'
+  s.add_dependency 'railties', '>= 3.2.19', '< 5.0'
+  s.add_development_dependency 'rake', '10.3.2'
+  s.add_development_dependency 'tzinfo', '1.2.1'
+  s.add_development_dependency 'rspec', '3.0.0'
 end
